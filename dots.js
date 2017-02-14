@@ -20,4 +20,5 @@ canvas.addEventListener("click", function(e) {
 var clearBut = document.getElementById("clear");
 clearBut.addEventListener("click", function() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    lastcoos = null;
 });
