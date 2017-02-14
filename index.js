@@ -5,4 +5,7 @@ canvas.addEventListener("click", function(e) {
     ctx.fillRect(e.pageX - 50, e.pageY - 50, 100, 100);
 });
                      
-  
+var clearBut = document.getElementById("clear");
+clearBut.addEventListener("click", function() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
